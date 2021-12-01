@@ -1,0 +1,27 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "An automation test framework which is based on playwright.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Baal",
+  "license": "ISC",
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "reporters": [
+      "default",
+      "jest-html-reporters"
+    ]
+  },
+  "dependencies": {
+    "jest": "^27.0.4",
+    "jest-html-reporters": "^2.1.6",
+    "jest-playwright-preset": "^1.6.1",
+    "playwright": "^1.12.2"
+  }
+}
